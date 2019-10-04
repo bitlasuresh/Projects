@@ -1,0 +1,74 @@
+@media print{
+	#booking-website {
+	    text-align: center;
+	}
+	.contact-details {
+	    float: right;
+	}
+	table.ticket_body_table {
+	    width: 100%;
+	    border: 1px solid;
+	    border-collapse: collapse;
+	}
+	.ticket_body_table td{
+		border: 1px solid;
+	}
+	caption{
+		text-align: left;
+	}
+	span{
+		font-weight: bold;
+	}
+	.ticket_condition {
+	    margin: 20px;
+	}
+	.cancellation_charges {
+	    margin: 20px;
+	}
+	@page {
+	  size: A4;
+	}
+}
+@media screen {
+	table.ticket_body_table {
+		    width: 100%;
+		    border: 1px solid rgba(0, 0, 0, 0.12);
+		    border-collapse: separate;
+		    border-spacing: 0px;			
+		}
+		.ticket_body_table td{
+			border: 1px solid rgba(0, 0, 0, 0.12);
+		}
+		caption{
+			text-align: left;
+		}
+		span{
+			font-weight: bold;
+		}
+		.ticket_condition {
+		    margin: 20px;
+		}
+		.cancellation_charges {
+		    margin: 20px;
+		}
+		.print_ticket {
+	    border: 1px solid rgba(0, 0, 0, 0.12);
+	    padding: 10px;
+	    border-radius: 5px
+		}
+		tbody.text-bold {
+	    text-align: -webkit-center;
+		}
+		thead {
+	    text-align: -webkit-center;
+	}
+	#booking-website {
+		    text-align: center;
+		}
+	.contact-details {
+		    float: right;
+		}
+	caption {
+	    margin: 10px;
+	 }
+}
