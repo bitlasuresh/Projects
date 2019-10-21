@@ -1,0 +1,149 @@
+/* .form-group {
+    float: left;
+    padding: 3px;
+}
+/* .booking-content {
+    padding-right: 10px;
+    padding-left: 0px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+} */
+/* .nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+    padding: 10px;
+} */
+.booking-content .nav-tabs{
+	border: none;
+}
+.nav>li>a {
+    display: block;
+    margin: 1px;
+    padding: 25px 5px;
+    height: 100%;
+    width: 100%;
+    background: rgba(214, 205, 205);
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid rgba(152, 152, 152);
+}
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: rgba(210, 101, 23, 0.44);
+}
+.page-header {
+    padding-bottom: 0;
+    margin: 0 0 0px;
+    border-bottom: 1px solid #eee;
+}
+/* .bars {
+    padding: 23px;
+}
+.bars {
+    padding: 23px;
+    background-color: #020201c7;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid rgba(161, 152, 165, 0.17);
+    width: 81px;
+    text-align: center;
+}
+.button {
+    float: right;
+    margin-top: -34px;
+}
+.btn{
+	border-radius: 3px;
+}
+
+ */
+ */
+#main-header {
+    border-bottom: 1px solid lightgrey;
+}
+input.form-control {
+    width: 154px !important;
+}
+#booking-widge {
+    border: 1px solid lightgray;
+    padding: 13px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.08);
+}
+.search-button {
+    position: relative;
+    float: right;
+    padding-top: 26px;
+    padding-right: 8px;
+}
+.pickup-chart {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.08);
+}
+#accordionExample {
+    display: inline-flex;
+    width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+.Booking-list {
+    border: 1px solid lightgray;
+    padding: 8px;
+    border-radius: 4px;
+}
+#main-header {
+    margin-bottom: 2px;
+    background: lightgrey;
+    width: 100%;
+}
+body{
+
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    background: rgba(211, 211, 211, 0.05);
+}
+.line-border {
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 94px;
+    padding: 2px;
+}
+#hide {
+    margin: 25px;
+}
+input[type="text"] {
+    border-radius: 4px;
+    width: 94px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 6px;
+    margin-bottom: 18px;
+}
+#login-button {
+    margin: 20px;
+    float: right;
+}
+.pie {
+  width: 300px;
+  height: 125px;
+  background-image: conic-gradient(orange 64%, blue 17%, black);
+  border-radius: 50%
+}
+.nav-tabs {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    margin: 2px;
+}
+.col-lg-offset-1 {
+    margin-left: 7.333333%;
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Booking Engine</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="main-header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1">
+					<div class="nav-bar pull-left" id="hide">
+						<button class="openbtn" onclick="openNav()">☰</button>  
+					</div>				
+				</div>
+				<div class="col-md-4">
+					<img src="3146.png" alt="companylogo">				
+				</div>
+				<div class="col-md-5">
+					Ticket Simply Helpline: 9686552292
+					Ticket Simply Helpline: 9686552292
+					Ticket Simply Helpline: 9686552292
+					Ticket Simply Helpline: 9686552292
+					Ticket Simply Helpline: 9686552292
+					Ticket Simply Helpline: 9686552292
+				</div>
+				<div class="col-md-2">
+					<div id="login-button">
+						<button type="button" class="btn btn-danger">Login/Logout</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="side-bar">
+			<div class="navbar-nav pull-left" id="side-bar">
+				<ul class="navbar-left nav">
+					<li class="active"><a href="#">Dashboard</a></li>
+			    <li><a href="#">Bookings</a></li>
+			    <li><a href="#">Services</a></li>
+			    <li><a href="#">Accounts</a></li>
+			    <li><a href="#">Reports</a></li>
+			    <li><a href="#">Manage</a></li>
+			    <li><a href="#">Setting</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="line-border">
+				<div class="col-md-7">
+					<div id="booking-widge">
+						<form id="search-form" class="form-inline">
+							<div class="form-group">
+								<label for="origin">Origin</label><br>
+								<select class="form-control">
+									<option>Chennai</option>
+									<option>Bangalore</option>
+									<option>Chennai</option>
+									<option>Chennai</option>
+								</select>
+								<!-- <div class="button">					
+									<button class="btn  btn-search" type="button">Search</button>
+								</div> -->
+							</div>
+							<div class="form-group">
+								<label for="destination">Destination</label><br>
+								<select class="form-control">
+									<option>Bangalore</option>
+									<option>Bangalore</option>
+									<option>Bangalore</option>
+									<option>Chennai</option>
+								</select>	
+								<!-- <div class="button">					
+									<button class="btn  btn-search" type="button">Search</button>
+								</div> -->
+							</div>
+							<div class="form-group">
+								<label for="date">Onward </label><br>
+								<input type="date" class="form-control" name="datepicker">
+							</div>
+							<div class="form-group">
+								<label for="date">Return (Optional)</label><br>
+								<input type="date" class="form-control" name="datepicker">
+							</div>
+							<div class="form-group">
+								<label for="code">Code</label><br>
+								<select class="form-control">
+									<option>BNG-CHN</option>
+									<option>Chennai</option>
+								</select>	
+								<!-- <div class="button">					
+									<button class="btn  btn-search" type="button">Search</button>
+								</div> -->
+							</div>
+							<div class="search-button">
+								<img src="search.png">								
+							</div>
+						</form>
+					</div>
+				</div>	
+				<div class="col-md-4">
+					<div class="pickup-chart">
+						<div class="accordion" id="accordionExample">
+						  <div class="card">
+						    <div class="card-header" id="headingOne">
+						      <h2 class="mb-0">
+						        <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          Print Ticket
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+						      <div class="card-body">
+						        <input type="text" name="Print">
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingTwo">
+						      <h2 class="mb-0">
+						        <button class="btn btn-default collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          Pickup Chart
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						      <div class="card-body">
+						        <input type="text" name="Print">
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingThree">
+						      <h2 class="mb-0">
+						        <button class="btn btn-default collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						         Passengers
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						      <div class="card-body">
+						        <input type="text" name="Print">
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingfour">
+						      <h2 class="mb-0">
+						        <button class="btn btn-default collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+						         Others
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+						      <div class="card-body">
+						        <input type="text" name="Print">
+						      </div>
+						    </div>
+						  </div>
+						</div>					
+					</div>
+				</div>
+			</div>	
+			<div class="col-md-6">
+				<div class="landing-header">
+					<h3> Your Booking Summary </h3>
+				</div>
+				<div class="Booking-list">
+					<ul class = "nav nav-tabs">
+					    <li class="btn btn-default">My Activity</li>
+					    <li class="btn btn-default">Reservation</li>
+					    <li class="btn btn-default">Pending Tickets</li>
+					    <li class="btn btn-default">Cancellation</li>
+					</ul>
+					<div class="pie"></div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="landing-panel-side">
+					<div class="landing-header">
+						<h3> Quick Reports Widget </h3>
+					</div>
+					<div class="Booking-list">
+						<ul class="">
+					    <li><a href="#">Tickets BOOKED by you</a></li>
+					    <li><a href="#">Tickets CANCELLED by you</a></li>
+					    <li><a href="#">E-Tickets Collection</a></li>
+					    <li><a href="#">Payment Due Report</a></li>
+					    <li><a href="#">Profit & Loss Account</a></li>
+					    <li><a href="#">ONline Branch/Agent Collection</a></li>
+					    <li><a href="#">Bima Online Branch/Agent Collection</a></li>
+					    <li><a href="#">User wise collection report</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="landing-header">
+					<h3> Quick Links </h3>
+				</div>
+				<div class="Booking-list">
+					<ul>
+						<li><a href="#">Bangalore - Vellore</a></li>
+						<li><a href="#">Bangalore - Vellore</a></li>
+						<li><a href="#">Bangalore - Vellore</a></li>
+						<li><a href="#">Bangalore - Vellore</a></li>
+						<li><a href="#">Bangalore - Vellore</a></li>
+						<li><a href="#">Bangalore - Vellore</a></li>
+						<li><a href="#">Bangalore - Vellore</a></li>
+						<li><a href="#">Bangalore - Vellore</a></li>
+						<li><a href="#">Bangalore - Vellore</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="landing-panel-side">
+					<div class="landing-header">
+						<h3> Income and Expenses </h3>
+					</div>
+					<div class="Booking-list">
+						<ul class="">
+					    <li><a href="#">Tickets BOOKED by you</a></li>
+					    <li><a href="#">Tickets CANCELLED by you</a></li>
+					    <li><a href="#">E-Tickets Collection</a></li>
+					    <li><a href="#">Payment Due Report</a></li>
+					    <li><a href="#">Profit & Loss Account</a></li>
+					    <li><a href="#">ONline Branch/Agent Collection</a></li>
+					    <li><a href="#">Bima Online Branch/Agent Collection</a></li>
+					    <li><a href="#">User wise collection report</a></li>
+					    <li><a href="#">User wise collection report</a></li>
+					    <li><a href="#">User wise collection report</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class=" col-lg-offset-1 col-md-6">
+				<div class="landing-header">
+					<h3> Hot Offers / News </h3>
+				</div>
+				<div class="Booking-list">
+					<marquee height="268px" scrollamount="1" direction="up" behavior="scroll" class="marquee_style">
+					<h1 style="font-size:13px;margin-left:10px;">Welcome to Unique Travels</h1>
+					<h1 style="font-size:13px;margin-left:10px;">Welcome to Unique Travels</h1>
+					<h1 style="font-size:13px;margin-left:10px;">Welcome to Unique Travels</h1>
+					<h1 style="font-size:13px;margin-left:10px;">Welcome to Unique Travels</h1>
+						<div class="dynamic_hot_offers_div">Hello world...!</div>
+					</marquee>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="landing-panel-side">
+					<div class="landing-header">
+						<h3> Notifications </h3>
+					</div>
+					<div class="Booking-list">
+						<ul class="">
+					    <li><a href="#">Tickets BOOKED by you</a></li>
+					    <li><a href="#">Tickets CANCELLED by you</a></li>
+					    <li><a href="#">E-Tickets Collection</a></li>
+					    <li><a href="#">Payment Due Report</a></li>
+					    <li><a href="#">Profit & Loss Account</a></li>
+					    <li><a href="#">ONline Branch/Agent Collection</a></li>
+					    <li><a href="#">Bima Online Branch/Agent Collection</a></li>
+					    <li><a href="#">User wise collection report</a></li>
+					    <li><a href="#">User wise collection report</a></li>
+					    <li><a href="#">User wise collection report</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<script>
+	function openNav() {
+	  document.getElementById("side-bar").style.display = "none";
+	  document.getElementById("hide").style.marginLeft = "50px";
+	}
+</script>
+</body>
+</html>

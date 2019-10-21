@@ -1,0 +1,138 @@
+body{
+	background: #d3d3d326;
+}
+#header-logbar {
+    background: #5374bd;
+}
+.header-menu-bar {
+    float: left;
+    width: 10%;
+    padding: 10px;
+}
+.header-menu-bar a {
+    height: 100%;
+    display: inline-block!important;
+    float: left;
+    width: 68px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 21px;
+    color: white;
+}
+.header-profile {
+    display: inline-flex;
+    float: right;
+    margin-top: -77px;
+    margin-right: 5px;
+    color: white;
+    list-style: none;
+    line-height: 37px;
+}
+.header-profile ul li {
+    list-style: none;
+}
+.bold{
+	color: white;
+}
+.header-action {
+    border-left: 1px solid lightgray;
+    height: 71px;
+    margin-left: 25px;
+    margin-right: -5px;
+}
+#action-bar {
+    padding: 28px;
+}
+/* .side-left ul li {
+    padding: 0px;
+    list-style: none;
+    margin-left: -40px;
+    width: 0px;
+    line-height: 60px;
+    font-size: 18px;
+    color: white;
+} */
+.side-left {
+    background: #5374bd;
+    border: 1px solid;
+    color: white;
+    position: absolute;
+    display: block;
+    left: 0;
+    padding: 7px;
+}
+.search-button {
+    float: right;
+    margin-top: 10px;
+    padding: 13px;
+}
+/* .booking_widget {
+    border: 1px solid lightgrey;
+    background: #d3d3d3a6;
+    margin-left: 2px;
+    border-radius: 4px;
+    padding: 8px;
+    float: left;
+} */
+/* .booking_search_widget {
+    border: 1px solid lightgrey;
+    float: left;
+    width: 92%;
+    border-radius: 3px;
+    padding: 2px;
+    background: #d3d3d33d;
+} */
+.pickup-chart {
+    background: #d3d3d3a6;
+    border: 1px solid lightgrey;
+    float: right;
+    padding: 8px;
+    margin-right: 2px;
+    border-radius: 4px;
+}
+#accordionExample {
+    display: flex;
+}
+input[type=text], select {
+    padding: 7px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+}input[type=date] {
+    padding: 7px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+}
+.sidebar-list li {
+    font-size: 13px;
+    text-align: left;
+    list-style: none;
+    margin-bottom: 8px;
+    line-height: 5em;
+    border-bottom: 1px solid #acbcde;
+}
+.sidebar-list{
+  padding: 0px;
+}
+.booking_widget {
+    border: 1px solid lightgrey;
+    background: #d3d3d3a6;
+    margin-left: 2px;
+    border-radius: 4px;
+    padding: 8px;
+    float: left;
+}
+.content {
+    position: relative;
+    left: 6%;
+    padding: 6px;
+}
+i.sidebar-icon {
+    display: block;
+    font-size: 24px;
+    line-height: 1.2em;
+    text-align: center;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Booking Engine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header id="header-logbar" class="header">
+		<div class="header-menu-bar">
+			<a href="#"><i class="fa fa-bars"></i></a>
+		</div>
+		<div class="header-brand">
+			<img src="logo.png" alt="operatorlogo">			
+		</div>
+		<div class="header-profile">
+			<ul>
+				<li>
+					<i class="fa fa-th fa-2x"></i>
+					<i class="fa fa-keyboard-o fa-2x"></i>
+					<span class="bold">Thu 17 Oct 13:07:57</span>
+				</li>
+				<li>Ticket Simply Helpline: 9686552292</li>
+			</ul>
+			<ul class="mysetting">
+				<li>
+					<a href="#"><span class="bold">Owner</span></a>
+					<a href="#"><span class="label label-danger">Logout</span></a>
+				</li>
+				<li>Collections: ₹8,960.00</li>
+			</ul>
+			<div class="header-action">
+				<i class="glyphicon glyphicon-fullscreen" id="action-bar"></i>
+			</div>
+		</div>
+	</header>
+	<aside class="side-left">
+		<ul class="sidebar-list">
+		    <li>Dashboard</li>
+		    <li>Bookings</li>
+		    <li>Services</li>
+		    <li>Charters</li>
+		    <li>Accounts</li>
+		    <li>Reports</li>
+		    <li>Manage</li>
+		    <li>Settings</li>
+		</ul>
+	</aside>
+	<div class="content">
+		<div class="booking_search_widget">
+			<div class="booking_widget">
+				<form class="form-inline" id="input-details">
+					<div class="form-group" >
+						<label for="origin">Origin</label><br>
+						<select >
+							<option></option>
+							<option>Chennai</option>
+							<option>Bangalore</option>
+							<option>Chennai</option>
+							<option>Chennai</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="origin">Origin</label><br>
+						<select>
+							<option></option>
+							<option>Chennai</option>
+							<option>Bangalore</option>
+							<option>Chennai</option>
+							<option>Chennai</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="date">Onward </label><br>
+						<input type="date" name="datepicker">
+					</div>
+					<div class="form-group">
+						<label for="date">Return (Optional)</label><br>
+						<input type="date" name="datepicker">
+					</div>
+					<div class="form-group">
+						<label for="code">Code</label><br>
+						<select>
+							<option>BNG-CHN</option>
+							<option>Chennai</option>
+						</select>	
+					</div>
+						<div class="form-group">
+					<div class="search-button">
+						<img src="search.png">	
+						</div>							
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Unique Travels -   ticketSimply - Simply Manage Travels</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header id="header-logbar" class="header">
+		<div class="header-menu-bar">
+			<a href="#"><i class="fa fa-bars"></i></a>
+		</div>
+		<div class="header-brand">
+			<img src="logo.png" alt="operatorlogo" class="header-img">			
+		</div>
+		<div class="header-profile">
+			<ul>
+				<li>
+					<i class="fa fa-th fa-2x"></i>
+					<i class="fa fa-keyboard-o fa-2x"></i>
+					<span class="bold">Thu 17 Oct 13:07:57</span>
+				</li>
+				<li>Ticket Simply Helpline: 9686552292</li>
+			</ul>
+			<ul class="mysetting">
+				<li>
+					<a href="#"><span class="bold">Owner</span></a>
+					<a href="#"><span class="label label-danger">Logout</span></a>
+				</li>
+				<li>Collections: ₹8,960.00</li>
+			</ul>
+			<div class="header-action">
+				<i class="glyphicon glyphicon-fullscreen" id="action-bar"></i>
+			</div>
+		</div>
+	</header>
+	<section>
+	<aside class="side-left">
+		<ul class="sidebar">
+			<li>
+				<a href="#"><i class="sidebar-icon fa fa-tachometer"></i><span class="sidebar-text">Dashboard</span></a>
+			</li>
+			<li>
+				<a href="#"><i class="sidebar-icon fa fa-bus"></i><span class="sidebar-text">Bookings</span></a>
+			</li>
+			<li>
+				<a href="#"><i class="sidebar-icon fa fa-bar-chart"></i><span class="sidebar-text">Services</span></a>
+			</li>
+			<li>
+				<a href="#"><i class="sidebar-icon fa fa-th"></i><span class="sidebar-text">Charters</span></a>
+			</li>
+			<li>
+				<a href="#"><i class="sidebar-icon fa fa-money"></i><span class="sidebar-text">Accounts</span></a>
+			</li>
+			<li>
+				<a href="#"><i class="sidebar-icon fa fa-table"></i><span class="sidebar-text">Reports</span></a>
+			</li>
+			<li>
+				<a href="#"><i class="sidebar-icon fa fa-user"></i><span class="sidebar-text">Manage</span></a>
+			</li>
+			<li>
+				<a href="#"><i class="sidebar-icon fa fa-gear"></i><span class="sidebar-text">Setting</span></a>
+			</li>
+		</ul>
+	</aside>
+	<div class="content">
+		<div class="booking_search_widget">
+			<div class="booking_widget">
+				<form class="form-inline" id="input-details">
+					<div class="form-group">
+						<label for="origin"><i class="fa fa-location-arrow"></i>Origin</label><br>
+						<select>
+							<option></option>
+							<option>Chennai</option>
+							<option>Bangalore</option>
+							<option>Chennai</option>
+							<option>Chennai</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="origin"><i class="fa fa-map-marker"></i>Origin</label><br>
+						<select>
+							<option></option>
+							<option>Chennai</option>
+							<option>Bangalore</option>
+							<option>Chennai</option>
+							<option>Chennai</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="date"><i class="fa fa-calendar"></i>Onward </label><br>
+						<input type="date" name="datepicker">
+					</div>
+					<div class="form-group">
+						<label for="date"><i class="fa fa-calendar"></i>Return (Optional)</label><br>
+						<input type="date" name="datepicker">
+					</div>
+					<div class="form-group">
+						<label for="code"><i class="fa fa-list"></i>Code</label><br>
+						<select>
+							<option>BNG-CHN</option>
+							<option>Chennai</option>
+						</select>	
+					</div>
+						<div class="form-group">
+					<div class="search-button">
+						<img src="search.png">	
+						</div>							
+					</div>
+				</form>
+			</div>
+			<div class="print-tabs">
+				<ul class="nav-tabs">
+					<li class="btn-default"><a href="#">Print Ticket</a></li>
+					<li class="btn-default"><a href="#">Passenger Details</a></li>
+					<li class="btn-default"><a href="#">Pickup Chart</a></li>
+					<li class="btn-default"><a href="#">Others</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content-body">
+			<div class="booking-summary">
+				<header class="sub-header">
+					<h4><i class="fa fa-pie-chart"></i>Your Booking Summary</h4>
+				</header>
+				<div class="landing-panel">
+					<ul class="nav nav-tabs">
+						<li><a href="#">My Activity</a></li>
+						<li><a href="#">Reservation</a></li>
+						<li><a href="#">Pending Tickets</a></li>
+						<li><a href="#">Cancellation</a></li>
+					</ul>
+					<div class="pie"></div>
+				</div>
+			</div>
+			<div class="Quick_Reports_Widget">
+				<header class="sub-header">
+					<h4><i class="fa fa-file-text"></i>Quick Reports Widget</h4>
+				</header>
+				<div class="landing-panel">
+					<ul class="nav navbar-link">
+						<li><a href="#">Tickets BOOKED by you</a></li>
+						<li><a href="#">Tickets CANCELLED by you</a></li>
+						<li><a href="#">e-tickets Collection</a></li>
+						<li><a href="#">Payment Due Report</a></li>
+						<li><a href="#">Profit & Loss Account</a></li>
+						<li><a href="#">ONline Branch/Agent Collection</a></li>
+						<li><a href="#">Bima Online Branch/Agent Collection</a></li>
+						<li><a href="#">User wise collection report</a></li>
+						<li><a href="#">User wise collection report</a></li>
+						<li><a href="#">User wise collection report</a></li>
+						<li><a href="#">User wise collection report</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="Quick_Links">
+				<header class="sub-header">
+					<h4><i class="fa fa-link"></i>Quick Links</h4>
+				</header>
+				<div class="landing-panel">
+					<ul class="nav navbar-link">
+						<li><a href="#">Bhopal - Indore</a></li>
+						<li><a href="#">Bangalore - Tenkasi</a></li>
+						<li><a href="#">Guntur - Tirupati</a></li>
+						<li><a href="#">Ahmedabad - Aathankarai</a></li>
+						<li><a href="#">Ahmedabad - Aathankarai</a></li>
+						<li><a href="#">Ahmedabad - Aathankarai</a></li>
+						<li><a href="#">Ahmedabad - Aathankarai</a></li>
+						<li><a href="#">Ahmedabad - Aathankarai</a></li>
+						<li><a href="#">Ahmedabad - Aathankarai</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="income_expenses">
+				<header class="sub-header">
+					<h4><i class="fa fa-money"></i>Income And Expenses</h4>
+				</header>
+				<div class="landing-panel">
+					<div class="text-center">
+		  		<button name="button" type="button" class="btn btn-primary">CREATE NEW TXN</button>
+		  		</div>
+				</div>
+			</div>
+			<div class="Hot_Offers_News">
+				<header class="sub-header">
+					<h4><i class="fa fa-file-text"></i>Hot Offers / News</h4>
+				</header>
+				<div class="landing-panel">
+					<div id="dynamic_hot_offers_text_area">
+						<marquee height="268px" scrollamount="2" direction="up" behavior="scroll" class="marquee_style">
+							<h1 style="font-size:13px;margin-left:10px;">Welcome to Unique Travels</h1>
+								<div class="dynamic_hot_offers_div">Hello world...!</div>
+								<div class="dynamic_hot_offers_div">Hello world...!</div>
+								<div class="dynamic_hot_offers_div">Hello world...!</div>
+						</marquee>
+					</div>
+				</div>
+			</div>
+			<div class="Notifications">
+				<header class="sub-header">
+					<h4><i class="fa fa-comment-o"></i>Notifications</h4>
+				</header>
+				<div class="landing-panel">
+					<table class="table">
+						<thead>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Recieved by	</th>
+								<th>Subject</th>
+								<th>Date</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Owner</th>
+								<th>New Route Starting</th>
+								<th>18/10/2019</th>
+							</tr>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Owner</th>
+								<th>New Route Starting</th>
+								<th>18/10/2019</th>
+							</tr>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Owner</th>
+								<th>New Route Starting</th>
+								<th>18/10/2019</th>
+							</tr>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Owner</th>
+								<th>New Route Starting</th>
+								<th>18/10/2019</th>
+							</tr>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Owner</th>
+								<th>New Route Starting</th>
+								<th>18/10/2019</th>
+							</tr>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Owner</th>
+								<th>New Route Starting</th>
+								<th>18/10/2019</th>
+							</tr>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Owner</th>
+								<th>New Route Starting</th>
+								<th>18/10/2019</th>
+							</tr>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Owner</th>
+								<th>New Route Starting</th>
+								<th>18/10/2019</th>
+							</tr>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Owner</th>
+								<th>New Route Starting</th>
+								<th>18/10/2019</th>
+							</tr>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Owner</th>
+								<th>New Route Starting</th>
+								<th>18/10/2019</th>
+							</tr>
+							<tr>
+								<th><i class="fa fa-envelope"></i></th>
+								<th>Owner</th>
+								<th>New Route Starting</th>
+								<th>18/10/2019</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>	
+	</section>
+</body>
+</html>
