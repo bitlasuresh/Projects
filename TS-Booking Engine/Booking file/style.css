@@ -2,13 +2,13 @@ body{
     background: white;
 }
 .header{
-    background-color: #2672EC;   
+    background-color: #57a62d;   
     border-bottom: 1px solid #d3d3d370; 
-    border-color: #2672EC;
+    border-color: #007100;
     color: #FFFFFF;
     position: relative;
     display: block;
-    height: 61px;
+    height: 65px;
 /*     border-bottom: 1px solid rgba(0,0,0,.1);
  */  }
  .header-menu-bar {
@@ -19,7 +19,7 @@ body{
     text-align: center;
     line-height: 60px;
     font-size: 21px;
-    border-right: 1px solid #5784efa6;
+    border-right: 1px solid #007100;
 }
 .header-menu-bar a{
   color: #ffffff;
@@ -44,7 +44,7 @@ body{
   list-style: none;
 }
 .mysetting {
-    border-right: 1px solid #5784efa6;
+    border-right: 1px solid #007100;
     padding-right: 20px;
     height: 100%;
 }
@@ -59,7 +59,7 @@ body{
     height: 100%;
 }
 .side-left {
-    background-color: #2672EC;
+    background-color: #57a62d;
     color: #ffffff;
     width: 6%;
     left: 0;
@@ -75,8 +75,8 @@ body{
 }
 .sidebar > li {
     font-size: 14px;
-    border-bottom: 1px solid #2672EC;
-    border-top: 1px solid #2E8DEF;
+    border-bottom: 1px solid #007100;
+    border-top: 1px solid #00A600;
 }
 .sidebar li a{
     display: block;
@@ -86,7 +86,7 @@ body{
     width: 100%;
     color: #bdc3c7;
     cursor: pointer;
-    background-color: #2672EC;
+    background-color: #57a62d;
     text-decoration: none;
     font-size: 14px;
     outline-style: none;
@@ -222,6 +222,42 @@ header.sub-header i {
 .booking_widget i {
     margin-right: 5px;
 }
+ #print input[type="text"] {
+    width: 91px;
+    height: 34px;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+    background: white;
+}
+#others input[type="text"] {
+    height: 34px;
+    width: 64px;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+    background: white;
+}
+#chart input[type="text"] {
+    height: 34px;
+    width: 105px;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+    background: white;
+}
+#passenger input[type="text"] {
+    height: 34px;
+    width: 137px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: white;
+}
+.modal-body label {
+    display: inline-block;
+    /* max-width: 100%; */
+    /* margin-bottom: 5px; */
+    font-weight: 700;
+    width: 183px;
+}
+
 
 
 
